@@ -1,14 +1,14 @@
-import React from "react";
-import "./style.css";
+import React from 'react'
+import './style.css'
 
-import Product from './comp/ProdComp'
-import prodData from './comp/products'
+import Product from './comp/Product'
+import products from './productsdata'
 
 
 
 function App() {
 
-  const productComponents = prodData.map(item => <Product products={item}/>)
+  console.log(products)
 
   return(
     <div>

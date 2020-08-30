@@ -4,9 +4,9 @@ function Product(props) {
   return(
 
     <div>
-    {props.products.name}<br>
-    {props.products.price}</br>
-    {props.product.description}
+      {props.product.name}<br>
+      {props.product.price}</br>
+      {props.product.desc}
     <p></p>
     
     </div>
