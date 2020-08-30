@@ -1,11 +1,20 @@
 import React from "react";
 import "./style.css";
 
-export default function App() {
-  return (
+import Product from './comp/ProdComp'
+import prodData from './comp/products'
+
+
+
+function App() {
+
+  const productComponents = prodData.map(item => <Product products={item}/>)
+
+  return(
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      {productComponents}
     </div>
-  );
+  )
 }
+
+export default App
